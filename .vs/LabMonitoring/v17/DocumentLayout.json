@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|d:\\kianna\\programming\\edp\\labmonitoring\\labmonitoring\\usercontrols\\addusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|solutionrelative:labmonitoring\\usercontrols\\addusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|d:\\kianna\\programming\\edp\\labmonitoring\\labmonitoring\\usercontrols\\addusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|solutionrelative:labmonitoring\\usercontrols\\addusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddUsers.cs",
+              "DocumentMoniker": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\AddUsers.cs",
+              "RelativeDocumentMoniker": "LabMonitoring\\UserControls\\AddUsers.cs",
+              "ToolTip": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\AddUsers.cs",
+              "RelativeToolTip": "LabMonitoring\\UserControls\\AddUsers.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAswDUAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T05:32:44.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddUsers.cs [Design]",
+              "DocumentMoniker": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\AddUsers.cs",
+              "RelativeDocumentMoniker": "LabMonitoring\\UserControls\\AddUsers.cs",
+              "ToolTip": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\AddUsers.cs [Design]",
+              "RelativeToolTip": "LabMonitoring\\UserControls\\AddUsers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T05:32:41.51Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
