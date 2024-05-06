@@ -176,7 +176,7 @@ namespace LabMonitoring.UserControls
                 cbComLab.SelectedIndex = 6;
             }
 
-            string item = row.Cells[5   ].Value.ToString();
+            string item = row.Cells[5].Value.ToString();
 
             if (item == "Aircon")
             {
