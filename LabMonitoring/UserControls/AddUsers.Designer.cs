@@ -205,6 +205,7 @@
             this.Controls.Add(this.panel6);
             this.Name = "AddUsers";
             this.Size = new System.Drawing.Size(1127, 681);
+            this.Load += new System.EventHandler(this.AddUsers_Load);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.ResumeLayout(false);

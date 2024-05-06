@@ -81,5 +81,9 @@ namespace LabMonitoring.UserControls
             cmbType.SelectedIndex = 0;
         }
 
+        private void AddUsers_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

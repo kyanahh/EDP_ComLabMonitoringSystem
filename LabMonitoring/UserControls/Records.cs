@@ -149,42 +149,43 @@ namespace LabMonitoring.UserControls
             dtTimeOut.Value = Convert.ToDateTime(row.Cells[7].Value.ToString());
             txtRemarks.Text = row.Cells[10].Value.ToString();
 
-            string lab = row.Cells[5].Value.ToString();
+            string lab1 = row.Cells[4].Value.ToString();
 
-            if (lab == "Computer Laboratory 1")
+            if (lab1 == "Computer Laboratory 1")
             {
                 cbComLab.SelectedIndex = 1;
             }
-            else if (lab == "Computer Laboratory 2")
+            else if (lab1 == "Computer Laboratory 2")
             {
                 cbComLab.SelectedIndex = 2;
             }
-            else if (lab == "Computer Laboratory 3")
+            else if (lab1 == "Computer Laboratory 3")
             {
                 cbComLab.SelectedIndex = 3;
             }
-            else if (lab == "Computer Laboratory 4")
+            else if (lab1 == "Computer Laboratory 4")
             {
                 cbComLab.SelectedIndex = 4;
             }
-            else if (lab == "Computer Laboratory 5")
+            else if (lab1 == "Computer Laboratory 5")
             {
                 cbComLab.SelectedIndex = 5;
             }
-            else if (lab == "Computer Laboratory 6")
+            else if (lab1 == "Computer Laboratory 6")
             {
                 cbComLab.SelectedIndex = 6;
             }
 
-            string item = row.Cells[4].Value.ToString();
+            string item = row.Cells[5   ].Value.ToString();
 
             if (item == "Aircon")
             {
                 cmbItem.SelectedIndex = 1;
-            }else if (item == "Projector")
+            }
+            else if (item == "Projector")
             {
                 cmbItem.SelectedIndex = 2;
-            } 
+            }
             else if (item == "Carpet")
             {
                 cmbItem.SelectedIndex = 3;
@@ -225,6 +226,9 @@ namespace LabMonitoring.UserControls
             {
                 cmbItem.SelectedIndex = 12;
             }
+
+            cbComLab.Refresh();  
+            cmbItem.Refresh();
 
         }
 

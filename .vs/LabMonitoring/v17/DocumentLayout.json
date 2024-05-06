@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|d:\\kianna\\programming\\edp\\labmonitoring\\labmonitoring\\usercontrols\\addusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|solutionrelative:labmonitoring\\usercontrols\\addusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|d:\\kianna\\programming\\edp\\labmonitoring\\labmonitoring\\usercontrols\\records.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|solutionrelative:labmonitoring\\usercontrols\\records.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|d:\\kianna\\programming\\edp\\labmonitoring\\labmonitoring\\usercontrols\\addusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|solutionrelative:labmonitoring\\usercontrols\\addusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|D:\\Kianna\\Programming\\EDP\\LabMonitoring\\labmonitoring\\usercontrols\\records.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|solutionrelative:labmonitoring\\usercontrols\\records.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddUsers.cs",
-              "DocumentMoniker": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\AddUsers.cs",
-              "RelativeDocumentMoniker": "LabMonitoring\\UserControls\\AddUsers.cs",
-              "ToolTip": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\AddUsers.cs",
-              "RelativeToolTip": "LabMonitoring\\UserControls\\AddUsers.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAswDUAAAA4AAAA",
+              "Title": "Records.cs",
+              "DocumentMoniker": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\Records.cs",
+              "RelativeDocumentMoniker": "LabMonitoring\\UserControls\\Records.cs",
+              "ToolTip": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\Records.cs",
+              "RelativeToolTip": "LabMonitoring\\UserControls\\Records.cs",
+              "ViewState": "AQIAAMwAAAAAAAAAAAAAwOMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T05:32:44.509Z",
+              "WhenOpened": "2024-05-06T05:33:24.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AddUsers.cs [Design]",
-              "DocumentMoniker": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\AddUsers.cs",
-              "RelativeDocumentMoniker": "LabMonitoring\\UserControls\\AddUsers.cs",
-              "ToolTip": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\AddUsers.cs [Design]",
-              "RelativeToolTip": "LabMonitoring\\UserControls\\AddUsers.cs [Design]",
+              "Title": "Records.cs [Design]",
+              "DocumentMoniker": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\Records.cs",
+              "RelativeDocumentMoniker": "LabMonitoring\\UserControls\\Records.cs",
+              "ToolTip": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\Records.cs [Design]",
+              "RelativeToolTip": "LabMonitoring\\UserControls\\Records.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T05:32:41.51Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-06T05:33:16.623Z"
             }
           ]
         }
