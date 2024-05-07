@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using LabMonitoring.UserControls;
+using MySqlX.XDevAPI.Common;
 
 
 
@@ -34,11 +35,14 @@ namespace LabMonitoring
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Are you sure you want to log out?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-            Login login = new Login();
-            login.Show();
-            this.Visible = false;
+            if(result == DialogResult.Yes)
+            {
+                Login login = new Login();
+                login.Show();
+                this.Visible = false;
+            }
         }
 
         private void btnReport_Click(object sender, EventArgs e)
