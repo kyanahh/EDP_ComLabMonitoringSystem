@@ -79,6 +79,12 @@ namespace LabMonitoring
                         db.btnUsers.Enabled = true;
                         db.btnRecords.Enabled = true;
                         db.btnUserLogs.Enabled = true;
+                        db.btnCL1.Enabled = true;
+                        db.btnCL2.Enabled = true;
+                        db.btnCL3.Enabled = true;
+                        db.btnCL4.Enabled = true;
+                        db.btnCL5.Enabled = true;
+                        db.btnCL6.Enabled = true;
                     }
                     else if (type == "2")
                     {

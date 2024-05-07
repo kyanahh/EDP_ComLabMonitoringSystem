@@ -76,6 +76,42 @@
     <Compile Include="UserControls\AddUsers.Designer.cs">
       <DependentUpon>AddUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ComLab1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ComLab1.Designer.cs">
+      <DependentUpon>ComLab1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ComLab2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ComLab2.Designer.cs">
+      <DependentUpon>ComLab2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ComLab3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ComLab3.Designer.cs">
+      <DependentUpon>ComLab3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ComLab4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ComLab4.Designer.cs">
+      <DependentUpon>ComLab4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ComLab5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ComLab5.Designer.cs">
+      <DependentUpon>ComLab5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ComLab6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ComLab6.Designer.cs">
+      <DependentUpon>ComLab6.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Records.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -114,6 +150,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\AddUsers.resx">
       <DependentUpon>AddUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ComLab1.resx">
+      <DependentUpon>ComLab1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ComLab2.resx">
+      <DependentUpon>ComLab2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ComLab3.resx">
+      <DependentUpon>ComLab3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ComLab4.resx">
+      <DependentUpon>ComLab4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ComLab5.resx">
+      <DependentUpon>ComLab5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ComLab6.resx">
+      <DependentUpon>ComLab6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Records.resx">
       <DependentUpon>Records.cs</DependentUpon>

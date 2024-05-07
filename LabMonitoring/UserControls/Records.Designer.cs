@@ -71,9 +71,9 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(20, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 28);
+            this.label1.Size = new System.Drawing.Size(167, 28);
             this.label1.TabIndex = 4;
-            this.label1.Text = "RECORDS";
+            this.label1.Text = "ALL RECORDS";
             // 
             // numQty
             // 
@@ -365,6 +365,7 @@
             this.cbSearch.Name = "cbSearch";
             this.cbSearch.Size = new System.Drawing.Size(196, 29);
             this.cbSearch.TabIndex = 66;
+            this.cbSearch.SelectedIndexChanged += new System.EventHandler(this.cbSearch_SelectedIndexChanged);
             // 
             // label9
             // 

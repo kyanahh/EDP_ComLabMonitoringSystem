@@ -64,5 +64,41 @@ namespace LabMonitoring
             Records records = new Records();
             AddUserControl(records);
         }
+
+        private void btnCL1_Click(object sender, EventArgs e)
+        {
+            ComLab1 cl1 = new ComLab1();
+            AddUserControl(cl1);
+        }
+
+        private void btnCL2_Click(object sender, EventArgs e)
+        {
+            ComLab2 cl2 = new ComLab2();
+            AddUserControl(cl2);
+        }
+
+        private void btnCL3_Click(object sender, EventArgs e)
+        {
+            ComLab3 cl3 = new ComLab3();
+            AddUserControl(cl3);
+        }
+
+        private void btnCL4_Click(object sender, EventArgs e)
+        {
+            ComLab4 cl4 = new ComLab4();
+            AddUserControl(cl4);
+        }
+
+        private void btnCL5_Click(object sender, EventArgs e)
+        {
+            ComLab5 cl5 = new ComLab5();
+            AddUserControl(cl5);
+        }
+
+        private void btnCL6_Click(object sender, EventArgs e)
+        {
+            ComLab6 cl6 = new ComLab6();
+            AddUserControl(cl6);
+        }
     }
 }

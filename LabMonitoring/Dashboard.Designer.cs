@@ -41,6 +41,12 @@
             this.btnRecords = new System.Windows.Forms.Button();
             this.lbUser = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCL6 = new System.Windows.Forms.Button();
+            this.btnCL5 = new System.Windows.Forms.Button();
+            this.btnCL4 = new System.Windows.Forms.Button();
+            this.btnCL3 = new System.Windows.Forms.Button();
+            this.btnCL2 = new System.Windows.Forms.Button();
+            this.btnCL1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -104,7 +110,7 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(-1, 373);
+            this.btnLogout.Location = new System.Drawing.Point(-1, 643);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(232, 46);
             this.btnLogout.TabIndex = 13;
@@ -118,7 +124,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(11, 673);
+            this.label3.Location = new System.Drawing.Point(11, 705);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 19);
             this.label3.TabIndex = 14;
@@ -130,7 +136,7 @@
             this.btnUserLogs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUserLogs.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUserLogs.ForeColor = System.Drawing.Color.White;
-            this.btnUserLogs.Location = new System.Drawing.Point(-1, 328);
+            this.btnUserLogs.Location = new System.Drawing.Point(-1, 598);
             this.btnUserLogs.Name = "btnUserLogs";
             this.btnUserLogs.Size = new System.Drawing.Size(232, 46);
             this.btnUserLogs.TabIndex = 15;
@@ -145,11 +151,11 @@
             this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsers.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsers.ForeColor = System.Drawing.Color.White;
-            this.btnUsers.Location = new System.Drawing.Point(-2, 283);
+            this.btnUsers.Location = new System.Drawing.Point(-2, 553);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.Size = new System.Drawing.Size(232, 46);
             this.btnUsers.TabIndex = 16;
-            this.btnUsers.Text = "Add Users";
+            this.btnUsers.Text = "Users";
             this.btnUsers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUsers.UseVisualStyleBackColor = false;
             this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
@@ -164,7 +170,7 @@
             this.btnRecords.Name = "btnRecords";
             this.btnRecords.Size = new System.Drawing.Size(232, 46);
             this.btnRecords.TabIndex = 18;
-            this.btnRecords.Text = "Records";
+            this.btnRecords.Text = "All Records";
             this.btnRecords.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecords.UseVisualStyleBackColor = false;
             this.btnRecords.Click += new System.EventHandler(this.btnRecords_Click);
@@ -174,7 +180,7 @@
             this.lbUser.AutoSize = true;
             this.lbUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUser.ForeColor = System.Drawing.Color.White;
-            this.lbUser.Location = new System.Drawing.Point(53, 673);
+            this.lbUser.Location = new System.Drawing.Point(53, 705);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(0, 19);
             this.lbUser.TabIndex = 19;
@@ -182,6 +188,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkGreen;
+            this.panel1.Controls.Add(this.btnCL6);
+            this.panel1.Controls.Add(this.btnCL5);
+            this.panel1.Controls.Add(this.btnCL4);
+            this.panel1.Controls.Add(this.btnCL3);
+            this.panel1.Controls.Add(this.btnCL2);
+            this.panel1.Controls.Add(this.btnCL1);
             this.panel1.Controls.Add(this.lbUser);
             this.panel1.Controls.Add(this.btnRecords);
             this.panel1.Controls.Add(this.btnUsers);
@@ -196,6 +208,96 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(215, 752);
             this.panel1.TabIndex = 0;
+            // 
+            // btnCL6
+            // 
+            this.btnCL6.Enabled = false;
+            this.btnCL6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCL6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCL6.ForeColor = System.Drawing.Color.White;
+            this.btnCL6.Location = new System.Drawing.Point(-1, 508);
+            this.btnCL6.Name = "btnCL6";
+            this.btnCL6.Size = new System.Drawing.Size(232, 46);
+            this.btnCL6.TabIndex = 25;
+            this.btnCL6.Text = "Computer Laboratory 6";
+            this.btnCL6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCL6.UseVisualStyleBackColor = false;
+            this.btnCL6.Click += new System.EventHandler(this.btnCL6_Click);
+            // 
+            // btnCL5
+            // 
+            this.btnCL5.Enabled = false;
+            this.btnCL5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCL5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCL5.ForeColor = System.Drawing.Color.White;
+            this.btnCL5.Location = new System.Drawing.Point(-2, 463);
+            this.btnCL5.Name = "btnCL5";
+            this.btnCL5.Size = new System.Drawing.Size(232, 46);
+            this.btnCL5.TabIndex = 24;
+            this.btnCL5.Text = "Computer Laboratory 5";
+            this.btnCL5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCL5.UseVisualStyleBackColor = false;
+            this.btnCL5.Click += new System.EventHandler(this.btnCL5_Click);
+            // 
+            // btnCL4
+            // 
+            this.btnCL4.Enabled = false;
+            this.btnCL4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCL4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCL4.ForeColor = System.Drawing.Color.White;
+            this.btnCL4.Location = new System.Drawing.Point(-1, 418);
+            this.btnCL4.Name = "btnCL4";
+            this.btnCL4.Size = new System.Drawing.Size(232, 46);
+            this.btnCL4.TabIndex = 23;
+            this.btnCL4.Text = "Computer Laboratory 4";
+            this.btnCL4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCL4.UseVisualStyleBackColor = false;
+            this.btnCL4.Click += new System.EventHandler(this.btnCL4_Click);
+            // 
+            // btnCL3
+            // 
+            this.btnCL3.Enabled = false;
+            this.btnCL3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCL3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCL3.ForeColor = System.Drawing.Color.White;
+            this.btnCL3.Location = new System.Drawing.Point(-3, 373);
+            this.btnCL3.Name = "btnCL3";
+            this.btnCL3.Size = new System.Drawing.Size(232, 46);
+            this.btnCL3.TabIndex = 22;
+            this.btnCL3.Text = "Computer Laboratory 3";
+            this.btnCL3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCL3.UseVisualStyleBackColor = false;
+            this.btnCL3.Click += new System.EventHandler(this.btnCL3_Click);
+            // 
+            // btnCL2
+            // 
+            this.btnCL2.Enabled = false;
+            this.btnCL2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCL2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCL2.ForeColor = System.Drawing.Color.White;
+            this.btnCL2.Location = new System.Drawing.Point(-2, 328);
+            this.btnCL2.Name = "btnCL2";
+            this.btnCL2.Size = new System.Drawing.Size(232, 46);
+            this.btnCL2.TabIndex = 21;
+            this.btnCL2.Text = "Computer Laboratory 2";
+            this.btnCL2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCL2.UseVisualStyleBackColor = false;
+            this.btnCL2.Click += new System.EventHandler(this.btnCL2_Click);
+            // 
+            // btnCL1
+            // 
+            this.btnCL1.Enabled = false;
+            this.btnCL1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCL1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCL1.ForeColor = System.Drawing.Color.White;
+            this.btnCL1.Location = new System.Drawing.Point(-1, 283);
+            this.btnCL1.Name = "btnCL1";
+            this.btnCL1.Size = new System.Drawing.Size(232, 46);
+            this.btnCL1.TabIndex = 20;
+            this.btnCL1.Text = "Computer Laboratory 1";
+            this.btnCL1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCL1.UseVisualStyleBackColor = false;
+            this.btnCL1.Click += new System.EventHandler(this.btnCL1_Click);
             // 
             // Dashboard
             // 
@@ -229,5 +331,11 @@
         public System.Windows.Forms.Button btnRecords;
         private System.Windows.Forms.Label lbUser;
         private System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Button btnCL4;
+        public System.Windows.Forms.Button btnCL3;
+        public System.Windows.Forms.Button btnCL2;
+        public System.Windows.Forms.Button btnCL1;
+        public System.Windows.Forms.Button btnCL6;
+        public System.Windows.Forms.Button btnCL5;
     }
 }

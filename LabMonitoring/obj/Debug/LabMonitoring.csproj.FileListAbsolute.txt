@@ -16,3 +16,9 @@ D:\Kianna\Programming\EDP\LabMonitoring\LabMonitoring\obj\Debug\LabMonitoring.Us
 D:\Kianna\Programming\EDP\LabMonitoring\LabMonitoring\obj\Debug\LabMonitoring.UserControls.AddUsers.resources
 D:\Kianna\Programming\EDP\LabMonitoring\LabMonitoring\obj\Debug\LabMonitoring.UserControls.UserLogs.resources
 D:\Kianna\Programming\EDP\LabMonitoring\LabMonitoring\obj\Debug\LabMonitoring.UserControls.Records.resources
+D:\Kianna\Programming\EDP\LabMonitoring\LabMonitoring\obj\Debug\LabMonitoring.UserControls.ComLab1.resources
+D:\Kianna\Programming\EDP\LabMonitoring\LabMonitoring\obj\Debug\LabMonitoring.UserControls.ComLab2.resources
+D:\Kianna\Programming\EDP\LabMonitoring\LabMonitoring\obj\Debug\LabMonitoring.UserControls.ComLab3.resources
+D:\Kianna\Programming\EDP\LabMonitoring\LabMonitoring\obj\Debug\LabMonitoring.UserControls.ComLab4.resources
+D:\Kianna\Programming\EDP\LabMonitoring\LabMonitoring\obj\Debug\LabMonitoring.UserControls.ComLab5.resources
+D:\Kianna\Programming\EDP\LabMonitoring\LabMonitoring\obj\Debug\LabMonitoring.UserControls.ComLab6.resources

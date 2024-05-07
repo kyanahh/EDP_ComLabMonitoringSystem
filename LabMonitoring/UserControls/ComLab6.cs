@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,12 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LabMonitoring.UserControls
 {
-    public partial class Records : UserControl
+    public partial class ComLab6 : UserControl
     {
         MySqlConnection con = new MySqlConnection("datasource=localhost;username=root;password=;database=labmonitoring;");
         MySqlCommand cmd = new MySqlCommand();
@@ -21,17 +20,12 @@ namespace LabMonitoring.UserControls
         int items = 0;
         int lab = 0;
 
-        public Records()
+        public ComLab6()
         {
             InitializeComponent();
             cmbItem.SelectedIndex = 0;
             cbSearch.SelectedIndex = 0;
             cbComLab.SelectedIndex = 0;
-        }
-
-        private void Records_Load(object sender, EventArgs e)
-        {
-            LoadData();
         }
 
         public void ClearAll()
@@ -63,7 +57,8 @@ namespace LabMonitoring.UserControls
                     "reports.qty as Quantity, reports.remarks AS Remarks, reports.todate AS " +
                     "DateCreated FROM (((reports INNER JOIN items ON reports.itemid = items.itemid) " +
                     "INNER JOIN users ON reports.usernumber = users.usernumber) " +
-                    "INNER JOIN comlab ON reports.labid = comlab.labid) ORDER BY reportid DESC";
+                    "INNER JOIN comlab ON reports.labid = comlab.labid) WHERE reports.labid = 6 " +
+                    "ORDER BY reportid DESC";
 
                 cmd = new MySqlCommand(sql, con);
                 dtr = cmd.ExecuteReader();
@@ -82,14 +77,108 @@ namespace LabMonitoring.UserControls
             }
         }
 
+        private void ComLab6_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void pbRefresh_Click(object sender, EventArgs e)
+        {
+            ClearAll();
+            LoadData();
+        }
+
         private void btnClear_Click(object sender, EventArgs e)
         {
             ClearAll();
         }
 
+        private void cmbItem_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedItem = cmbItem.SelectedItem.ToString();
+
+            if (selectedItem == "Aircon")
+                items = 1;
+            else if (selectedItem == "Projector")
+                items = 2;
+            else if (selectedItem == "Carpet")
+                items = 3;
+            else if (selectedItem == "Windows")
+                items = 4;
+            else if (selectedItem == "Light Switch")
+                items = 5;
+            else if (selectedItem == "Power Socket")
+                items = 6;
+            else if (selectedItem == "Light")
+                items = 7;
+            else if (selectedItem == "Table")
+                items = 8;
+            else if (selectedItem == "Cabinets")
+                items = 9;
+            else if (selectedItem == "White Board")
+                items = 10;
+            else if (selectedItem == "Chairs")
+                items = 11;
+            else if (selectedItem == "Door")
+                items = 12;
+            else
+                items = 0;
+        }
+
+        private void cbComLab_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedItem1 = cbComLab.SelectedItem.ToString();
+
+            if (selectedItem1 == "Computer Laboratory 1")
+                lab = 1;
+            else if (selectedItem1 == "Computer Laboratory 2")
+                lab = 2;
+            else if (selectedItem1 == "Computer Laboratory 3")
+                lab = 3;
+            else if (selectedItem1 == "Computer Laboratory 4")
+                lab = 4;
+            else if (selectedItem1 == "Computer Laboratory 5")
+                lab = 5;
+            else if (selectedItem1 == "Computer Laboratory 6")
+                lab = 6;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Are you sure you want to permanently delete this record?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                {
+                    con.Open();
+                    string sql = "DELETE FROM reports WHERE reportid = '" + txtReportID.Text + "' ";
+                    cmd = new MySqlCommand(sql, con);
+                    dtr = cmd.ExecuteReader();
+
+                    MessageBox.Show("Record deleted successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    return;
+                };
+
+                ClearAll();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+
+            LoadData();
+        }
+
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            try { 
+            try
+            {
                 if (MessageBox.Show("Are you sure you want to update this record?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
                 {
                     con.Open();
@@ -107,7 +196,7 @@ namespace LabMonitoring.UserControls
                     cmd.Parameters.AddWithValue("@qty", numQty.Value);
                     cmd.Parameters.AddWithValue("@remarks", txtRemarks.Text);
 
-                dtr = cmd.ExecuteReader();
+                    dtr = cmd.ExecuteReader();
 
                     MessageBox.Show("Record updated successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -130,15 +219,8 @@ namespace LabMonitoring.UserControls
             LoadData();
         }
 
-        private void pbRefresh_Click(object sender, EventArgs e)
-        {
-            LoadData();
-            ClearAll();
-        }
-
         private void dgvData_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
             int index = e.RowIndex;
             DataGridViewRow row = dgvData.Rows[index];
             txtReportID.Text = row.Cells[0].Value.ToString();
@@ -227,73 +309,8 @@ namespace LabMonitoring.UserControls
                 cmbItem.SelectedIndex = 12;
             }
 
-            cbComLab.Refresh();  
+            cbComLab.Refresh();
             cmbItem.Refresh();
-
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (MessageBox.Show("Are you sure you want to permanently delete this record?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
-                {
-                    con.Open();
-                    string sql = "DELETE FROM reports WHERE reportid = '" + txtReportID.Text + "' ";
-                    cmd = new MySqlCommand(sql, con);
-                    dtr = cmd.ExecuteReader();
-
-                    MessageBox.Show("Record deleted successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    return;
-                };
-
-                ClearAll();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                con.Close();
-            }
-
-            LoadData();
-        }
-
-        private void cmbItem_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string selectedItem = cmbItem.SelectedItem.ToString();
-
-            if (selectedItem == "Aircon")
-                items = 1;
-            else if (selectedItem == "Projector")
-                items = 2;
-            else if (selectedItem == "Carpet")
-                items = 3;
-            else if (selectedItem == "Windows")
-                items = 4;
-            else if (selectedItem == "Light Switch")
-                items = 5;
-            else if (selectedItem == "Power Socket")
-                items = 6;
-            else if (selectedItem == "Light")
-                items = 7;
-            else if (selectedItem == "Table")
-                items = 8;
-            else if (selectedItem == "Cabinets")
-                items = 9;
-            else if (selectedItem == "White Board")
-                items = 10;
-            else if (selectedItem == "Chairs")
-                items = 11;
-            else if (selectedItem == "Door")
-                items = 12;
-            else
-                items = 0;
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -316,7 +333,8 @@ namespace LabMonitoring.UserControls
                     "INNER JOIN users ON reports.usernumber = users.usernumber) " +
                     "INNER JOIN comlab ON reports.labid = comlab.labid) WHERE " +
                     "LOWER(items.itemname) = LOWER('" + searchValue + "')" +
-                    "OR LOWER(items.itemname) LIKE '%" + searchValue + "%' ORDER BY reportid DESC;";
+                    "OR LOWER(items.itemname) LIKE '%" + searchValue + "%' AND " +
+                    "reports.labid = 6 ORDER BY reportid DESC;";
                 }
                 else if (cbSearch.Text == "Time In")
                 {
@@ -329,7 +347,8 @@ namespace LabMonitoring.UserControls
                     "DateCreated FROM (((reports INNER JOIN items ON reports.itemid = items.itemid) " +
                     "INNER JOIN users ON reports.usernumber = users.usernumber) " +
                     "INNER JOIN comlab ON reports.labid = comlab.labid) WHERE " +
-                    "reports.timein LIKE '%" + txtSearch.Text + "%' ORDER BY reportid DESC";
+                    "reports.timein LIKE '%" + txtSearch.Text + "%' AND reports.labid = 6" +
+                    " ORDER BY reportid DESC";
                 }
                 else if (cbSearch.Text == "Time Out")
                 {
@@ -342,7 +361,8 @@ namespace LabMonitoring.UserControls
                     "DateCreated FROM (((reports INNER JOIN items ON reports.itemid = items.itemid) " +
                     "INNER JOIN users ON reports.usernumber = users.usernumber) " +
                     "INNER JOIN comlab ON reports.labid = comlab.labid) WHERE " +
-                    "reports.timeout LIKE '%" + txtSearch.Text + "%' ORDER BY reportid DESC";
+                    "reports.timeout LIKE '%" + txtSearch.Text + "%' AND reports.labid = 6 " +
+                    "ORDER BY reportid DESC";
                 }
                 else if (cbSearch.Text == "First Name")
                 {
@@ -356,7 +376,8 @@ namespace LabMonitoring.UserControls
                     "INNER JOIN users ON reports.usernumber = users.usernumber) " +
                     "INNER JOIN comlab ON reports.labid = comlab.labid)" +
                     " WHERE LOWER(users.firstname) = LOWER('" + searchValue + "')" +
-                    "OR LOWER(users.firstname) LIKE '%" + searchValue + "%' ORDER BY reportid DESC";
+                    "OR LOWER(users.firstname) LIKE '%" + searchValue + "%' AND reports.labid = 6 " +
+                    "ORDER BY reportid DESC";
                 }
                 else if (cbSearch.Text == "Last Name")
                 {
@@ -370,7 +391,8 @@ namespace LabMonitoring.UserControls
                     "INNER JOIN users ON reports.usernumber = users.usernumber) " +
                     "INNER JOIN comlab ON reports.labid = comlab.labid) WHERE " +
                     "LOWER(users.lastname) = '" + searchValue + "'" +
-                    "OR LOWER(users.lastname) LIKE '%" + searchValue + "%' ORDER BY reportid DESC";
+                    "OR LOWER(users.lastname) LIKE '%" + searchValue + "%' AND reports.labid = 6 " +
+                    "ORDER BY reportid DESC";
                 }
                 else if (cbSearch.Text == "Date Created")
                 {
@@ -389,7 +411,7 @@ namespace LabMonitoring.UserControls
                     "OR STR_TO_DATE(reports.todate, '%M %d, %Y') = STR_TO_DATE('" + searchValue + "', '%M %d, %Y')" +
                     "OR LOWER(date_format(reports.todate, '%M %d, %Y')) = '" + searchValue + "'" +
                     "OR LOWER(date_format(reports.todate, '%M %d, %Y')) LIKE '%" + searchValue + "%' " +
-                    "ORDER BY reportid DESC";
+                    "AND reports.labid = 6 ORDER BY reportid DESC";
                 }
                 else if (cbSearch.Text == "Section")
                 {
@@ -403,7 +425,8 @@ namespace LabMonitoring.UserControls
                     "INNER JOIN users ON reports.usernumber = users.usernumber) " +
                     "INNER JOIN comlab ON reports.labid = comlab.labid)" +
                     " WHERE LOWER(reports.section) = LOWER('" + searchValue + "')" +
-                    "OR LOWER(reports.section) LIKE '%" + searchValue + "%' ORDER BY reportid DESC";
+                    "OR LOWER(reports.section) LIKE '%" + searchValue + "%' AND reports.labid = 6 " +
+                    "ORDER BY reportid DESC";
                 }
                 else if (cbSearch.Text == "Quantity")
                 {
@@ -417,7 +440,8 @@ namespace LabMonitoring.UserControls
                     "INNER JOIN users ON reports.usernumber = users.usernumber) " +
                     "INNER JOIN comlab ON reports.labid = comlab.labid) " +
                     "WHERE LOWER(reports.qty) = LOWER('" + searchValue + "')" +
-                    "OR LOWER(reports.qty) LIKE '%" + searchValue + "%' ORDER BY reportid DESC";
+                    "OR LOWER(reports.qty) LIKE '%" + searchValue + "%' AND reports.labid = 6 " +
+                    "ORDER BY reportid DESC";
                 }
                 else if (cbSearch.Text == "Remarks")
                 {
@@ -431,21 +455,8 @@ namespace LabMonitoring.UserControls
                     "INNER JOIN users ON reports.usernumber = users.usernumber) " +
                     "INNER JOIN comlab ON reports.labid = comlab.labid) " +
                     "WHERE LOWER(reports.remarks) = LOWER('" + searchValue + "')" +
-                    "OR LOWER(reports.remarks) LIKE '%" + searchValue + "%' ORDER BY reportid DESC";
-                }
-                else if (cbSearch.Text == "Computer Laboratory")
-                {
-                    sql = "SELECT reports.reportid AS ReportID, reports.usernumber as UserID, " +
-                    "users.firstname AS FirstName, users.lastname AS LastName, " +
-                    "comlab.comlab AS ComLab, " +
-                    "items.itemname AS ItemName, " +
-                    "reports.timein AS TimeIn, reports.timeout AS TimeOut, reports.section AS Section, " +
-                    "reports.qty as Quantity, reports.remarks AS Remarks, reports.todate AS " +
-                    "DateCreated FROM (((reports INNER JOIN items ON reports.itemid = items.itemid) " +
-                    "INNER JOIN users ON reports.usernumber = users.usernumber) " +
-                    "INNER JOIN comlab ON reports.labid = comlab.labid) " +
-                    "WHERE LOWER(comlab.comlab) = LOWER('" + searchValue + "')" +
-                    "OR LOWER(comlab.comlab) LIKE '%" + searchValue + "%' ORDER BY reportid DESC";
+                    "OR LOWER(reports.remarks) LIKE '%" + searchValue + "%' AND reports.labid = 6 " +
+                    "ORDER BY reportid DESC";
                 }
 
                 cmd = new MySqlCommand(sql, con);
@@ -463,29 +474,6 @@ namespace LabMonitoring.UserControls
             {
                 con.Close();
             }
-        }
-
-        private void cbComLab_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string selectedItem1 = cbComLab.SelectedItem.ToString();
-
-            if (selectedItem1 == "Computer Laboratory 1")
-                lab = 1;
-            else if (selectedItem1 == "Computer Laboratory 2")
-                lab = 2;
-            else if (selectedItem1 == "Computer Laboratory 3")
-                lab = 3;
-            else if (selectedItem1 == "Computer Laboratory 4")
-                lab = 4;
-            else if (selectedItem1 == "Computer Laboratory 5")
-                lab = 5;
-            else if (selectedItem1 == "Computer Laboratory 6")
-                lab = 6;
-        }
-
-        private void cbSearch_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

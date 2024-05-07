@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|d:\\kianna\\programming\\edp\\labmonitoring\\labmonitoring\\usercontrols\\records.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|solutionrelative:labmonitoring\\usercontrols\\records.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|d:\\kianna\\programming\\edp\\labmonitoring\\labmonitoring\\usercontrols\\comlab6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|solutionrelative:labmonitoring\\usercontrols\\comlab6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|D:\\Kianna\\Programming\\EDP\\LabMonitoring\\labmonitoring\\usercontrols\\records.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|solutionrelative:labmonitoring\\usercontrols\\records.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|d:\\kianna\\programming\\edp\\labmonitoring\\labmonitoring\\usercontrols\\comlab1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|solutionrelative:labmonitoring\\usercontrols\\comlab1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|d:\\kianna\\programming\\edp\\labmonitoring\\labmonitoring\\usercontrols\\comlab1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|solutionrelative:labmonitoring\\usercontrols\\comlab1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|d:\\kianna\\programming\\edp\\labmonitoring\\labmonitoring\\usercontrols\\comlab6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{40A1DC31-976F-439F-B6EF-40BD3181D6CA}|LabMonitoring\\LabMonitoring.csproj|solutionrelative:labmonitoring\\usercontrols\\comlab6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +26,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Records.cs",
-              "DocumentMoniker": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\Records.cs",
-              "RelativeDocumentMoniker": "LabMonitoring\\UserControls\\Records.cs",
-              "ToolTip": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\Records.cs",
-              "RelativeToolTip": "LabMonitoring\\UserControls\\Records.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAuwLIAAAAlAAAA",
+              "DocumentIndex": 2,
+              "Title": "ComLab1.cs [Design]",
+              "DocumentMoniker": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\ComLab1.cs",
+              "RelativeDocumentMoniker": "LabMonitoring\\UserControls\\ComLab1.cs",
+              "ToolTip": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\ComLab1.cs [Design]",
+              "RelativeToolTip": "LabMonitoring\\UserControls\\ComLab1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T05:33:24.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T08:37:50.488Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Records.cs [Design]",
-              "DocumentMoniker": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\Records.cs",
-              "RelativeDocumentMoniker": "LabMonitoring\\UserControls\\Records.cs",
-              "ToolTip": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\Records.cs [Design]",
-              "RelativeToolTip": "LabMonitoring\\UserControls\\Records.cs [Design]",
+              "Title": "ComLab1.cs",
+              "DocumentMoniker": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\ComLab1.cs",
+              "RelativeDocumentMoniker": "LabMonitoring\\UserControls\\ComLab1.cs",
+              "ToolTip": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\ComLab1.cs",
+              "RelativeToolTip": "LabMonitoring\\UserControls\\ComLab1.cs",
+              "ViewState": "AQIAAMQBAAAAAAAAAAAIwNsBAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T05:33:16.623Z"
+              "WhenOpened": "2024-05-07T08:44:58.353Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ComLab6.cs [Design]",
+              "DocumentMoniker": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\ComLab6.cs",
+              "RelativeDocumentMoniker": "LabMonitoring\\UserControls\\ComLab6.cs",
+              "ToolTip": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\ComLab6.cs [Design]",
+              "RelativeToolTip": "LabMonitoring\\UserControls\\ComLab6.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T09:15:46.254Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ComLab6.cs",
+              "DocumentMoniker": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\ComLab6.cs",
+              "RelativeDocumentMoniker": "LabMonitoring\\UserControls\\ComLab6.cs",
+              "ToolTip": "D:\\Kianna\\Programming\\EDP\\LabMonitoring\\LabMonitoring\\UserControls\\ComLab6.cs",
+              "RelativeToolTip": "LabMonitoring\\UserControls\\ComLab6.cs",
+              "ViewState": "AQIAAOAAAAAAAAAAAAAAwFABAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T09:16:26.226Z",
+              "EditorCaption": ""
             }
           ]
         }
